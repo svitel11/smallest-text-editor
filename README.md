@@ -16,3 +16,6 @@ const editor = new SmallestTextEditor([DIV-ID])
 //get Value
 editor.getValue()
 ```
+
+# Example
+https://jsfiddle.net/svitel11/ko2pnzjs/118/

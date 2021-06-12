@@ -1,27 +1,24 @@
 export default class SmallestTextEditor {
     constructor(divId) {
-        this.divId = '#' + divId
-        this.init()
+        this.divId = '#' + divId;
+        this.init();
     }
 
     findDivId() {
+        if (this.divId === 'smallest-text-editor') {
+            console.error("The assigned id must not be 'smallest-text-editor'");
+            return false;
+        }
+
         const divId = document.querySelector(this.divId) || null;
         if (divId === null) {
-            console.error('The div id you provided can not be found!')
-            return false
+            console.error('The div id you provided can not be found!');
+            return false;
         }
-        return true
+        return true;
     }
 
     stylize(style) {
-        /*var inui = false;
-        var ivalue = null;
-        if (arguments[1]) {
-            inui = ui;
-        }
-        if (arguments[2]) {
-            ivalue = value;
-        }*/
         document.execCommand(style, false, null);
     }
 
@@ -48,8 +45,7 @@ export default class SmallestTextEditor {
         buttons.style.borderRadius = '3px';
 
         var bold = document.createElement('button')
-        bold.onclick = function() {
-            console.log('bold pressed')
+        bold.onclick = function () {
             _that.stylize('bold');
         }
         bold.innerHTML = 'B';
@@ -58,8 +54,7 @@ export default class SmallestTextEditor {
         bold.style.cursor = 'pointer';
 
         var italic = document.createElement('button')
-        italic.onclick = function() {
-            console.log('italic pressed')
+        italic.onclick = function () {
             _that.stylize('italic');
         }
         italic.innerHTML = 'I';
@@ -68,8 +63,7 @@ export default class SmallestTextEditor {
         italic.style.cursor = 'pointer';
 
         var underline = document.createElement('button')
-        underline.onclick = function() {
-            console.log('underline pressed')
+        underline.onclick = function () {
             _that.stylize('underline');
         }
         underline.innerHTML = 'U';
@@ -77,9 +71,9 @@ export default class SmallestTextEditor {
         underline.style.margin = '2px 4px';
         underline.style.cursor = 'pointer';
 
-        buttons.appendChild(bold)
-        buttons.appendChild(italic)
-        buttons.appendChild(underline)
+        buttons.appendChild(bold);
+        buttons.appendChild(italic);
+        buttons.appendChild(underline);
 
         document.querySelector(this.divId).appendChild(buttons);
         document.querySelector(this.divId).appendChild(editor);
