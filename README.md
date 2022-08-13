@@ -1,7 +1,7 @@
 # What is this?
 A text editor with very few functions such as bold, italic or underline.
 
-![Screenshot](https://www.vitel.at/storage/app/media/editor.png)
+![Screenshot](https://cloud.vitel.at/editor.png)
 
 # Installation
 `npm i smallest-text-editor --save`

@@ -1,7 +1,7 @@
 {
   "name": "smallest-text-editor",
-  "version": "1.0.5",
-  "description": "Javascript text editor that has only basic functions (bold, italic, underline, ...). It does not depend on other packages and takes up very little space.",
+  "version": "1.1.0",
+  "description": "Javascript text editor that has only basic functions (bold, italic, underline and text color). It does not depend on other packages and takes up very little space.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
