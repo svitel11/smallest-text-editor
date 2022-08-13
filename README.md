@@ -18,4 +18,4 @@ editor.getValue()
 ```
 
 # Example
-https://jsfiddle.net/svitel11/ko2pnzjs/118/
+https://jsfiddle.net/svitel11/ko2pnzjs/123/
