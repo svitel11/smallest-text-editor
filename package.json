@@ -1,0 +1,37 @@
+{
+  "name": "smallest-text-editor",
+  "version": "1.1.7",
+  "description": "Javascript text editor that has only basic functions (bold, italic, underline and text color). It does not depend on other packages and takes up very little space.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "npx babel ./dev.js --out-file index.js"
+  },
+  "bin": {
+    "test": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svitel11/smallest-text-editor.git"
+  },
+  "keywords": [
+    "text-editor",
+    "word-editor",
+    "javascript-editor",
+    "editor",
+    "textarea-editor",
+    "form-editor",
+    "small-javascript-editor",
+    "npm-javascript-editor"
+  ],
+  "author": "Samuel Vitel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svitel11/smallest-text-editor#readme"
+  },
+  "homepage": "https://www.vitel.dev/smallest-text-editor",
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "babel-preset-minify": "^0.5.2"
+  }
+}

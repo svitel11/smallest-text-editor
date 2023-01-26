@@ -1,0 +1,17 @@
+{
+  "targets": ">0.5%",
+  "presets": [
+    [
+      "@babel/preset-env",
+      ["minify", {
+        "mangle": {
+          "exclude": []
+        },
+        "unsafe": {
+          "typeConstructors": false
+        },
+        "keepFnName": true
+      }]
+    ]
+  ]
+}
